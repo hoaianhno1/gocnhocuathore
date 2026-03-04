@@ -176,6 +176,8 @@ body {
 }
 
 .chip-btn {
+  -webkit-appearance: none;
+  appearance: none;
   border: 1px solid var(--border);
   background: rgba(15, 23, 42, 0.04);
   color: #334155;
@@ -184,14 +186,21 @@ body {
   font: inherit;
   font-weight: 700;
   font-size: 0.9rem;
+  line-height: 1.1;
+  text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
 }
 
 .chip-btn.active {
-  border: 0;
+  border: 1px solid transparent;
   background: linear-gradient(130deg, var(--accent-1), var(--accent-3));
   color: #fff;
+}
+
+.chip-btn:focus-visible {
+  outline: 2px solid rgba(91, 77, 255, 0.35);
+  outline-offset: 2px;
 }
 
 .view-controls .state-text {
@@ -199,6 +208,8 @@ body {
 }
 
 .view-switch {
+  -webkit-appearance: none;
+  appearance: none;
   position: absolute;
   top: 0.7rem;
   right: 0.8rem;
@@ -223,6 +234,11 @@ body {
 
 .view-switch:hover {
   color: #0f172a;
+}
+
+.view-switch:focus-visible {
+  outline: 2px solid rgba(91, 77, 255, 0.35);
+  outline-offset: 2px;
 }
 
 .product-card {
