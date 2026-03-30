@@ -47,7 +47,7 @@ export function BioPage() {
       <section className="page-wrap">
         <Header
           title=""
-          subtitle="Trang trưng bày của Vũ Hoài Anh"
+          subtitle="Góc nhỏ của thỏ"
           actionLabel="Vào trang admin"
           actionPath="/admin"
         />
